@@ -1,0 +1,109 @@
+
+
+#tw-widget1 li {
+  background: #fff;
+  position: relative;
+  margin: 0 auto; }
+#tw-widget1 a {
+  text-decoration: none; }
+#tw-widget1 .user {
+  background: #35AADC;
+  padding: 1%;
+}
+
+  #tw-widget1 .user a span {
+  display: block;	
+  text-align: left; 
+	margin: 1%;
+	padding-left: 3%;
+	}
+
+  #tw-widget1 .user a span[data-scribe="element:name"] {
+    position: absolute;
+    top: 4%;
+    left: 30%;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: bold; }
+  #tw-widget1 .user a span[data-scribe="element:screen_name"] {
+    position: absolute;
+    top: 14%;
+    left: 30%;
+    font-size: 0.8rem;
+    color: white; }
+
+#tw-widget1 .tweet {
+  margin: 1;
+  padding: 2%;
+  color: #4d4d4d;
+  font-weight: bold; 
+  font-size: 0.8rem;
+  text-align: center;
+  }
+  #tw-widget1 .tweet a {
+    color: #4d4d4d;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+
+	}
+  #tw-widget1 .tweet a[data-scribe="element:url"] {
+    color: #00ae8e;
+	font-size: 0.8rem
+	}
+  #tw-widget1 .tweet a[data-scribe="element:hashtag"] {
+    color: #FD7A79;
+font-size: 0.8rem	}
+#tw-widget1 .interact {
+visibility: hidden;}
+#tw-widget1 .timePosted {
+  margin: 0 0 1%;
+  padding: 0 1%;
+  font-size: 0.8rem;
+  text-align: center; }
+  
+  @media (max-width:960px) {
+
+  tw-widget1 .user a span[data-scribe="element:name"] {
+    position: absolute;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold; }
+
+  #tw-widget1 .user a span[data-scribe="element:screen_name"] {
+    position: absolute;
+    top: 13%;
+    font-size: 0.7rem;
+    color: white; }
+
+#tw-widget1 .tweet {
+  margin: 1;
+  padding: 2%;
+  color: #4d4d4d;
+  font-weight: bold; 
+  font-size: 0.7rem
+  }
+
+  #tw-widget1 .tweet a {
+    color: #4d4d4d;
+    font-weight: bold;
+    text-decoration: none;
+
+	}
+  #tw-widget1 .tweet a[data-scribe="element:url"] {
+    color: #00ae8e;
+	font-size: 0.7rem
+	}
+  #tw-widget1 .tweet a[data-scribe="element:hashtag"] {
+    color: #FD7A79;
+font-size: 0.7rem	}
+  
+  
+  
+  
+  
+
+  }
+  @media (max-width:480px) {}
+
+

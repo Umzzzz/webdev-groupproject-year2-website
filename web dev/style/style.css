@@ -1,0 +1,827 @@
+html {
+    font-family: Verdana, Arial, Helvetica, "Droid sans", sans-serif;
+    font-size: 100%;  /* flexible baseline */
+    /* 
+    * rem is set relative to the font size of the root element, the html, instead of
+    * the body, and this is where the r in rem comes from, as rem stands for “root em“.
+    * The default browser font size is 16px.
+    */
+    line-height: 1.5;
+	  box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.featured-image {
+  padding: 2rem;
+}
+
+
+.background-img {
+  background: url("../images/image.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+
+
+
+.independantcontent {
+
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+}
+
+
+#secondarynav {
+    text-align: center;
+
+}
+#secondarynav li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 3rem;
+}
+
+li.secondarylinks a {
+    font-family: 'Jockey One', sans-serif;
+    letter-spacing: 0.05rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+    padding: 0rem 1rem 1rem 1rem;
+    line-height: 1.25rem;
+    text-decoration:none;
+    background-color:#002637;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 0.25rem 0.5rem;
+    position: relative;
+    right: 0.25rem;
+    border-radius: 5px 5px 5px 5px;
+}
+
+li.secondarylinks a:hover{
+background: #054e6e;
+opacity: 0.5;
+transition: ease 0.5s;
+}
+
+
+
+#menu {
+font-family: arial;
+position: fixed;
+top: 10px;
+left: 10px;
+visibility: hidden;
+z-index: 10;
+}
+
+
+  .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5%;	
+  }
+  
+  .courses {
+  width: 20%;
+  height: 12rem;
+  margin-right: 1%;
+  background: red;
+  overflow: hidden;
+  border-top: 5px #002637 solid;
+  }
+  
+  
+  .department {
+  width: 41%;
+  height: 12rem;
+  margin-right: 2%;
+  overflow: hidden;
+  border-top: 5px #002637 solid;
+
+  }
+  
+  .studyareas {
+  width: 20%;
+  height: 15rem;
+  margin-right: 1%;
+  overflow: hidden;
+  border-top: 5px #002637 solid;
+  }
+  
+    .twitter, #tw-widget1 {
+  background: #fff;
+  width: 20%;
+  height: 15rem;
+  margin-right: 1%;
+  overflow-x:hidden;
+  }
+  
+  .help {
+  width: 20%;
+  height: 15rem;
+  margin-right: 2%;
+  overflow: hidden;
+  border-top: 5px #002637 solid;
+  }
+  
+  .money {
+  width: 62%;
+  height: 12rem;
+  margin-right: 2%;
+  overflow: hidden;
+  border-top: 5px #002637 solid;
+  }
+  
+  .news {
+  width: 62%;
+  height: 12rem;	
+  margin-right: 2%;
+  overflow: hidden;
+  border-top: 5px #002637 solid;
+  }
+  
+   
+.skiplinks {
+position: absolute;
+left: -10000px;
+top: auto;
+width: 1px;
+height: 1px;
+overflow: hidden;
+}
+
+.department h1, .courses h1{
+position: absolute;
+top: 15%;
+}
+
+.studyareas h1, .help h1{
+position: absolute;
+top: 35%;
+}
+
+.money h1{
+position: absolute;
+top: 60%;
+}
+
+.news h1{
+position: absolute;
+top: 83%;
+}
+
+#gmap_canvas img{
+max-width:none!important;
+background:none!important;
+}
+
+#gmap_canvas{
+float: right;
+margin: 2%;
+height:400px;
+width:650px
+}
+
+/* Typography */
+
+h1 {
+    font-size: 2rem; 
+    letter-spacing: 0.05em;
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: center;
+    color: #002637;
+    padding: 1rem 1rem 3rem 3rem;
+}
+
+h2 {
+    font-size: 1.50rem;  
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: justify;
+    color: #002637;
+    letter-spacing: 2px;
+    padding: 1rem 1rem 3rem 3rem;
+	font-weight: bold;
+}
+
+h3 {
+    font-size: 1.25rem;  
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: left;
+    color: #002637;
+    letter-spacing: 2px;
+    padding: 1rem 1rem 3rem 3rem;
+}
+
+h4 {
+    font-size: 1rem;  
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: center;
+    color: #002637;
+    letter-spacing: 2px;
+    padding: 1rem 1rem 3rem 3rem;
+}
+
+
+p {
+    font-size: 1rem;  
+    font-family: 'Arvo', serif;
+    color: #002637;
+    padding: 0rem 6rem 1.5rem 6rem;
+    line-height: 1.25rem;
+}
+
+.list{
+padding: 0rem 6rem 3rem 6rem;
+line-height: 1.5;
+font-family: Arvo;
+}
+.wrap h1 {
+background: #002637;
+color: #fff;
+font-size: 1rem;
+padding: 1%;
+opacity: 0.9;
+text-align: left;
+max-width: 85%;
+}
+
+
+
+
+/* Tags */
+
+
+
+nav {
+
+width: 20rem;
+background: #002637;
+height: 100vh;
+position: fixed;
+text-align: left;
+margin: 0 auto;
+
+}
+
+
+
+main {
+ position: relative;
+ width: 80%;
+ float: right; 
+}
+
+footer {
+float: right;
+padding-right: 20%;
+  }
+
+footer a { 
+    text-decoration:underline;
+    color: #000;
+}
+
+
+
+.wrap h1:hover{
+background: red;
+opacity: 0.5;
+transition: ease 0.5s;
+}
+
+
+/* Media */
+
+
+.full-width-feature {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.half-width-feature {
+  padding: 2rem;
+  float: left;
+}
+
+address p {
+padding: 0rem 3rem 0 3rem;
+}
+
+.nopadding p {
+padding: 0;
+}
+
+/* Links - General */
+
+a { 
+    text-decoration:none;
+    color: #000;
+}
+
+
+a:visited {
+}
+
+
+a:hover {
+    text-decoration:none;
+}
+
+a:active {
+border-bottom:none;
+}
+
+
+a:focus {
+    outline:thick dotted;
+}
+
+
+
+/* Navigation */
+
+nav li {
+margin: 1rem;
+padding-top: 0.75rem;
+margin: 2%;
+}
+
+
+nav ul {
+padding-top: 2rem;
+padding-left: 0.5rem;
+}
+
+.logo {
+padding: 0.5rem 0rem 0rem 0.5rem;
+position: absolute;
+left: 87%;
+margin-bottom: 1rem;
+}
+
+
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  width: 90%;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #054e6e;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Links - Navigation */
+
+
+
+/* unvisited link */
+
+nav a { 
+    font-size: 1.25rem;  
+    font-family: 'Jockey One', sans-serif;
+    letter-spacing: 0.05rem;
+    color: #ffffff;
+    text-decoration: none;
+	  box-sizing: border-box;
+	  padding: 0.2rem 0.5rem;
+}
+
+
+
+/*active link*/
+
+nav a:active {
+    text-decoration:none;
+    border-left: solid #054e6e 0.25rem;
+    background-color:#002637;
+    color:#ffffff;
+}
+
+.currentlink {
+    text-decoration:none;
+    border-left: solid #ffffff 0.25rem;
+    background-color:#054e6e;
+    color:#ffffff;
+    
+}
+
+
+
+
+
+/* Firefox dotted link link fix */
+
+a:hover, a:active, a:focus, a:link, a:visited {
+  outline: 0;
+  outline: 0 !important;
+  outline-style:none;
+  border: 0; 
+}
+button, object, embed { 
+  outline: 0;
+  border: 0; 
+}
+
+/* All Input elements */
+input::-moz-focus-inner { 
+  border: 0; 
+}
+/* Or more specifically*/
+input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner{
+  border: 0; 
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and
+(min-device-width: 961px) and 
+(max-device-width: 1500px) {
+
+.wrap h1 {
+font-size: 1.3rem;
+}
+
+}
+
+@media (max-width:960px) { /* Tablet version */ 
+
+
+nav {
+/*background: #d8d8d8;*/
+height: 100vh;
+width: 50%;
+  padding-top: 2%;
+  text-align: left;
+  z-index: 9;
+  opacity: 0.9;
+}
+
+.logo {
+
+padding: 0.5rem 0rem 0rem 0.5rem;
+position: absolute;
+left: 80%;
+margin-bottom: 1rem;}
+
+
+nav a { 
+    font-size: 1rem;  
+    font-family: 'Jockey One', sans-serif;
+    letter-spacing: 0.05rem;
+    color: #ffffff;
+    text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav li {
+opacity: 1;
+}
+
+.independantcontent {
+  width: 70%;
+  padding:0;
+}
+
+
+h1 {
+  padding-top: 7rem;
+}
+
+h2 {
+  padding: 1rem;
+}
+p {
+  padding: 0rem 1rem;
+}
+
+#menu {visibility: visible;
+padding: 1%;
+margin: 1%;
+position: absolute;
+}
+
+#menu p {
+font-size: 3rem;
+color: #000;
+position: absolute;
+}
+
+main {
+  min-width: 100%;
+}
+
+#skiptonav {
+visibility: hidden;}
+
+
+.courses {
+  width: 45%;
+  height: 12rem;
+  margin-right: 2%;
+  }
+  
+  
+  .department {
+  width: 44.4%;
+  height: 12rem;
+  margin-right: 2%;
+  background: #fff;
+  margin-bottom: 0.3rem;
+  }
+  
+  .studyareas {
+  width: 44.4%;
+  height: 12rem;
+  margin-right: 2.5%;
+  margin-bottom: 0.3rem;
+  }
+  
+  .twitter, #tw-widget1 {
+  width: 44.4%;
+  height: 12rem;
+  margin-right: 2%;
+  background: #fff;
+  margin-bottom: 0.3rem;
+  overflow-x:hidden;
+  }
+  
+    .help {
+  width: 91%;
+  height: 12rem;
+  margin-right: 2%;
+  }
+  
+    .money {
+  width: 91%;
+  height: 12rem;
+  margin-right: 2%;
+  }
+  
+    .news {
+  width: 91%;
+  height: 12rem;
+  margin-right: 2%;
+  
+  }
+  
+ .courses h1{
+position: absolute;
+top: 20%;
+}
+
+ .department h1{
+position: absolute;
+top: 20%;
+}
+
+ .help h1{
+position: absolute;
+top: 52%;
+}
+
+.studyareas h1{
+position: absolute;
+top: 36%;
+}
+
+.money h1{
+position: absolute;
+top: 68%;
+}
+
+.news h1{
+position: absolute;
+top: 85%;
+}
+  
+ #gmap_canvas{
+float: right;
+margin: 2%;
+height:400px;
+width:480px
+}
+
+}
+
+@media (max-width:480px) { /* Mobile version*/ 
+
+nav {
+width: 100%;
+}
+
+
+nav a { 
+    font-size: 1rem;  
+    font-family: 'Jockey One', sans-serif;
+    letter-spacing: 0.05rem;
+    color: #ffffff;
+    text-decoration: none;
+    box-sizing: border-box;
+	  padding: 0.2rem;
+	}
+
+nav li {
+  padding: 0rem;
+}
+
+.logo {
+padding: 0.5rem 0rem 0rem 0.5rem;
+position: absolute;
+left: 65%;
+margin-bottom: 1rem;}
+
+h1 {
+padding-top: 7rem;
+}
+
+  #menu p {
+  font-size: 2rem;
+  color: #000;
+  padding: 2%;
+}
+
+
+
+/* Media */
+
+
+.full-width-feature {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+.half-width-feature {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+.third-width-feature {
+  min-width: 100%;
+  max-width: 100%;
+  padding: 0.5rem;
+  margin: 0 auto;
+}
+
+
+main {
+  width: 100%;
+}
+
+ .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.5%;
+  flex-direction: column;
+  min-width: 100%;
+  }
+
+  
+.courses {
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 0.5rem;
+  min-width: 100%;
+  }
+  
+  
+  .department {
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 0.5rem;
+  }
+  
+  .studyareas {
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 0.5rem;
+  }
+  
+    .twitter, #tw-widget1 {
+  width: 100%;
+  height: 12rem;
+  background: #fff;
+  overflow-x:hidden;
+  margin-bottom: 0.5rem;
+  }
+  
+    .help {
+  margin-top: 4%;
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 0.5rem;
+  }
+  
+    .money {
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 0.5rem;
+  }
+  
+    .news {
+  width: 100%;
+  height: 12rem;
+  margin-bottom: 0.5rem;
+  }
+  
+ .department h1{
+  position: absolute;
+  top: 29%;
+}
+
+.courses h1{
+position: absolute;
+top: 18%;
+}
+
+.studyareas h1{
+position: absolute;
+top: 41%;
+}
+
+.help h1{
+position: absolute;
+top: 65%;
+}
+
+.money h1{
+position: absolute;
+top: 77%;
+}
+
+.news h1{
+position: absolute;
+top: 89%;
+}
+
+#gmap_canvas{
+float: right;
+margin: 2%;
+height:400px;
+width:300px
+}
+
+
+}
+
+
+
+
+
+
+/**
+ * Created with advice and support from @csswizardry and @craftedpixelz 
+ */
